@@ -1,0 +1,60 @@
+.main {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-inline: 20px;
+}
+
+.container div {
+  flex: 1 0 20%;
+  border-radius: 16px;
+  box-shadow: -1px -7px 33px -3px rgba(0, 0, 0, 0.15);
+}
+
+.card {
+  position: relative;
+  display: block;
+  height: 100%;
+  max-height: 520px;
+  border-top-left-radius: calc(40 * 1px);
+  border-top-right-radius: calc(40 * 1px);
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.card img {
+  height: 300px;
+}
+
+.containerGrid {
+  gap: 5px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+.containerGrid h4 {
+  font-size: 1.2em;
+}
+
+.containerBody {
+  padding: 20px;
+  height: calc(100% - 300px);
+  background-color: aliceblue;
+  border-bottom-left-radius: calc(40 * 1px);
+  border-bottom-right-radius: calc(40 * 1px);
+}
+
+.containerGrid div > :where(:not(:first-child)),
+.containerBody > * {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.container h4 {
+  font-size: 1.8em;
+  text-transform: capitalize;
+}
